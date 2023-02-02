@@ -3,7 +3,6 @@
 Este es el módulo square.
 Contiene la definición de la clase Square.
 """
-
 class Square:
     """
     Esta es la clase Square.
