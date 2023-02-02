@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 x = ord('z')
 y = ord('Y')
 while x >= ord('a') and y >= ord('A'):
