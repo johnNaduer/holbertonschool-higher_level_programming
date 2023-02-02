@@ -1,6 +1,12 @@
 #!/usr/bin/python3
-"""Defines the square class"""
+"""
+Este es el módulo square.
+Contiene la definición de la clase Square.
+"""
 
 class Square:
-"""Square class. does not contain anything"""
-	pass
+    """
+    Esta es la clase Square.
+    No contiene nada aún.
+    """
+    pass
