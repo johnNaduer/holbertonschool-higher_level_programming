@@ -3,7 +3,7 @@
 
 
 def print_square(size):
-    
+
     """Prints a square made of "#" characters with the given size"""
     if type(size) != int:
         raise TypeError("size must be an integer")
@@ -15,7 +15,7 @@ def print_square(size):
     while x < size:
         y = 0
         while y < size:
-           print("#",end="")
-           y = y + 1
+            print("#", end="")
+            y = y + 1
         print("")
         x = x + 1
