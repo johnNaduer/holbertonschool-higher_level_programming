@@ -7,7 +7,7 @@ This guide is a continuation of the basics of classes and objects in Python prog
 
 A class variable is a variable that belongs to a class, rather than an instance of the class. In other words, it is shared among all instances of the class. You can define class variables using the class keyword and they are usually defined outside of any method.
 
-###Instance Variables
+### Instance Variables
 
 Instance variables are variables that belong to an instance of a class. They can be different for each instance of the class. You can define instance variables inside a method and they are usually set in the __init__ method.
 
@@ -24,4 +24,4 @@ Classes and objects are a powerful tool for organizing and structuring your code
 ### Illustrative example
 ![](https://pythondiario.com/wp-content/uploads/2014/10/Definiendo2Bclase2BMascota2Ben2BPython.png)
 
-* reference: pythondiario.com *
+> reference: pythondiario.com
