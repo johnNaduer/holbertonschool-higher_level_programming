@@ -1,4 +1,4 @@
-### Python - More Classes and Objects
+# Python - More Classes and Objects
 
 ### Introduction
 This guide is a continuation of the basics of classes and objects in Python programming language. If you are new to classes and objects, we recommend that you check out the Python classes and objects guide first.
