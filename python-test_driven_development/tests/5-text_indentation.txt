@@ -1,0 +1,38 @@
+Using ``5-text_indentation``
+----------------------------
+
+    Adds a newline character after each '.', '?' and ':' in the given text.
+
+    :param text: The text to be indented.
+    :type text: str
+
+    :raises TypeError: If text is not a string.
+
+    >>> text_indentation = __import__('5-text_indentation').text_indentation
+
+    >>> text_indentation("This is a test. This is only a test.")
+    This is a test.
+    <BLANKLINE>
+    This is only a test.
+    <BLANKLINE>
+
+    >>> text_indentation("Hello? How are you today?")
+    Hello?
+    <BLANKLINE>
+    How are you today?
+    <BLANKLINE>
+
+    >>> text_indentation("This is a test: This is only a test.")
+    This is a test:
+    <BLANKLINE>
+    This is only a test.
+    <BLANKLINE>
+
+    >>> text_indentation("This is not a test.")
+    This is not a test.
+    <BLANKLINE>
+
+    >>> text_indentation(123)
+    Traceback (most recent call last):
+    ...
+    TypeError: text must be a string
