@@ -1,0 +1,26 @@
+using ``7-base_geometry``
+-------------------------
+
+The code defines a BaseGeometry class, which serves as a base class for other geometry objects. The class has two methods: area and integer_validator. The area method returns the area of the geometry object but raises an exception if it is not implemented. The integer_validator method checks if the input value is an integer and greater than 0, and raises a TypeError or ValueError if it is not.
+
+First import ``7-base_geometry``
+
+    >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+    >>> base = BaseGeometry()
+    >>> base.area()
+    Traceback (most recent call last):
+    ...
+    Exception: area() is not implemented
+
+    >>> base.integer_validator("name", "value")
+    >>> base.integer_validator(1, 10)
+    Traceback (most recent call last):
+    ...
+    TypeError: name must be an integer
+
+    >>> base.integer_validator("name", -10)
+    Traceback (most recent call last):
+    ...
+    ValueError: name must be greater than 0
+
