@@ -12,6 +12,9 @@ if __name__ == "__main__":
         elif sys.argv[2] == "*":
             print("{} * {} = {}".format(num1, num2, calculator_1.mul(num1,num2)))
         elif sys.argv[2] == "/":
-            print("{} / {} = {}".format(num1, num2, calculator_1.div(num1,num2)))
+            if num2 == 0:
+                sys.exit(1)
+            else:
+                print("{} / {} = {}".format(num1, num2, calculator_1.div(num1,num2)))
     else:
-        print("{}".format(1))
+        sys.exit(1)
