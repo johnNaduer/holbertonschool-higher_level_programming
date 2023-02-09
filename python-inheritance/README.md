@@ -8,7 +8,7 @@ In Python, inheritance is implemented using the class keyword. The base class is
   <img src="https://files.realpython.com/media/ic-basic-inheritance.f8dc9ffee4d7.jpg">
 </p>
 
-> reference image:, [realpython](https://realpython.com/python3-object-oriented-programming/)
+> reference image: [realpython](https://realpython.com/python3-object-oriented-programming/)
 
 
 ###  Defining a Base Class
