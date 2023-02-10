@@ -22,4 +22,4 @@ def read_file(filename=""):
         that the file is properly closed after the contents have been read.
         """
         file_contents = file.read()
-        print(file_contents)
+        print(file_contents,end="")
