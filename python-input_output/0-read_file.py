@@ -14,7 +14,7 @@ def read_file(filename=""):
     Returns:
     None
     """
-    with open(filename, 'r', encoding = 'utf-8') as file:
+    with open(filename, 'r', encoding='utf-8') as file:
         """
         Open the file specified in the 'filename' argument with 'r' mode
         (read mode)and specify the encoding as 'utf-8'. The with
