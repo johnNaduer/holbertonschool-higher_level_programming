@@ -4,9 +4,4 @@
 
 def copy_list(a_list):
     """ function that return copy a_list """
-    new_list = []
-    i = 0
-    while i < len(a_list):
-        new_list.append(a_list[i])
-        i = i + 1
-    return (new_list)
+  return a_list[:]
