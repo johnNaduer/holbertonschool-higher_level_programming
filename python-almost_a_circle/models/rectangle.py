@@ -95,6 +95,8 @@ class Rectangle(Base):
         Parameters:
         - x (int): the new x-coordinate of the rectangle
         """
+        if type(x) is not int:
+            raise TypeError("x must be an integer")
         if x < 0:
             raise ValueError("x must be >= 0")
         self.__x = x
@@ -114,6 +116,8 @@ class Rectangle(Base):
         Parameters:
         - y (int): the new y-coordinate of the rectangle
         """
+        if type(y) is not int:
+            raise TypeError("y must be an integer")
         if y < 0:
             raise ValueError("y must be >= 0")
         self.__y = y
