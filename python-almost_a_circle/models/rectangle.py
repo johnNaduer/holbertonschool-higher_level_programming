@@ -127,5 +127,16 @@ class Rectangle(Base):
         self.__y = y
 
     def area(self):
-        """methodo that calculate area"""
+        """method that calculate area"""
         return self.width*self.height
+
+    def display(self):
+        """method that print "#" by form area """
+        x = 0
+        while x < self.height:
+            y = 0
+            while y < self.width:
+                print("#",end="")
+                y = y + 1
+            print()
+            x = x + 1
