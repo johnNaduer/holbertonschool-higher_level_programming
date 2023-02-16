@@ -140,6 +140,7 @@ class Rectangle(Base):
                 y = y + 1
             print()
             x = x + 1
+
     def __str__(self):
         """method __str__ print rectangle atributes"""
         return "[Rectangle] ({}) {}/{} - {}/{}".format(self.id, self.x, self.y,
