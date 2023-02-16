@@ -136,7 +136,7 @@ class Rectangle(Base):
         while x < self.height:
             y = 0
             while y < self.width:
-                print("#",end="")
+                print("#", end="")
                 y = y + 1
             print()
             x = x + 1
