@@ -133,9 +133,17 @@ class Rectangle(Base):
     def display(self):
         """method that print "#" by form area """
         x = 0
+        n = 0
+        while n < self.y:
+            print()            
+            n = n + 1
         while x < self.height:
             y = 0
+            m = 0
             while y < self.width:
+                while m < self.x:
+                    print(" ",end="")
+                    m = m + 1
                 print("#", end="")
                 y = y + 1
             print()
