@@ -37,6 +37,7 @@ class Square(Rectangle):
         return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.size)
 
     def update(self, *args, **kwargs):
+        """method return *args and **kwargs"""
         if kwargs:
             for key, value in kwargs.items():
                 if key == "id":
