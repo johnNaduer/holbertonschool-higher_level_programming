@@ -58,3 +58,7 @@ class Square(Rectangle):
             if len(args) >= 4:
                 self.y = args[3]
             return "[Square] ({}) {}/{} - {}".format(self.id, self.x, self.y, self.size)
+
+    def to_dictionary(self):
+        """method return dictionary"""
+        return {'id': self.id, 'size': self.size, 'x': self.x, 'y': self.y}
