@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+""" the class LockedClass is create """
+
 
 class LockedClass:
     """class that create attribute first_name """
