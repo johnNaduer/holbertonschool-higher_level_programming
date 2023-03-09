@@ -3,6 +3,7 @@
 This repository is aimed at beginners who want to learn about databases and MySQL. It covers the basics of what a database is, what a relational database is, and how to use SQL to interact with a MySQL database.
 </p>
 ### Table of Contents
+
 - What's a database?
 - What's a relational database?
 - What does SQL stand for?
