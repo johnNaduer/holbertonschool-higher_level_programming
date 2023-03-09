@@ -50,4 +50,32 @@ CREATE TABLE customers (
 ```
 This will create a new table called customers with three columns: id, name, and email.
 
-To alter a table, you can use the ALTER TABLE statement. Here's an example:
+### How to SELECT data from a table
+To retrieve data from a MySQL table, you can use the SELECT statement. Here's an example:
+```mysql
+SELECT * FROM users;
+```
+This statement selects all columns from the users table. You can also specify specific columns to select, filter the results using a WHERE clause, sort the results using ORDER BY, and aggregate data using functions like COUNT, SUM, and AVG.
+```mysql
+SELECT name, email FROM users WHERE id = 1 ORDER BY created_at DESC;
+```
+This statement selects only the name and email columns from the users table where the id is equal to 1, and orders the results by the created_at column in descending order.
+### How to INSERT, UPDATE or DELETE data
+To insert new data into a MySQL table, you can use the INSERT INTO statement. Here's an example:
+```mysql
+INSERT INTO users (name, email) VALUES ('John Doe', 'john@example.com');
+```
+This statement inserts a new row into the users table with the name and email values specified.
+
+To update existing data, you can use the UPDATE statement. For example, to update the email address for a specific user:
+```mysql
+UPDATE users SET email = 'jane@example.com' WHERE name = 'Jane Doe';
+```
+This statement updates the email column for the row(s) where the name column equals 'Jane Doe'.
+
+To delete data, you can use the DELETE FROM statement. For example, to delete a specific user:
+```mysql
+DELETE FROM users WHERE id = 5;
+```
+This statement deletes the row(s) from the users table where the id column equals 5.
+
