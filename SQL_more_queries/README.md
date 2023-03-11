@@ -3,10 +3,13 @@
 This document covers some advanced SQL queries and concepts, including creating users, managing privileges, primary and foreign keys, constraints, retrieving data from multiple tables, subqueries, and JOIN and UNION operations.
 
 ### How to create a new MySQL user
+
 To create a new MySQL user, you can use the CREATE USER statement:
+
 ```mysq
 CREATE USER 'username'@'hostname' IDENTIFIED BY 'password';
 ```
+
 **username:**  the name of the new user.
 **hostname: ** the hostname from which the user can connect to the MySQL server.
 **password: ** the password for the new user.
