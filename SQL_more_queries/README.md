@@ -10,17 +10,12 @@ To create a new MySQL user, you can use the CREATE USER statement:
 CREATE USER 'username'@'hostname' IDENTIFIED BY 'password';
 ```
 
-<p>
 **username:**  the name of the new user.
-</p>
 
-<p>
 **hostname:** the hostname from which the user can connect to the MySQL server.
-</p>
 
-<p>
 **password:** the password for the new user.
-</p>
+
 
 You can also specify additional options, such as account lockout, password expiration, and more. See the MySQL documentation for more information.
 
