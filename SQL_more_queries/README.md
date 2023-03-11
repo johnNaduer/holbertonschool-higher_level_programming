@@ -93,4 +93,3 @@ ON table1.column = table2.column;
 ```
 This query returns all rows from both tables where the values in the specified column(s) match.
 
-
