@@ -20,8 +20,6 @@ class Student:
                 mydict[data2] = self.last_name
             if data3 in attrs:
                 mydict[data3] = self.age
-            if attrs is not list:
-                return self.__dict__
             return mydict
         else:
             return {'first_name':self.first_name, 'last_name': self.last_name, 'age': self.age}
