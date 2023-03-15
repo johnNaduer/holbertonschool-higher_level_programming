@@ -9,35 +9,37 @@ import MySQLdb
 import sys
 
 if __name__ == "__main__":
-    # Get command line arguments
-    mysql_username = sys.argv[1]
-    mysql_password = sys.argv[2]
-    db_name = sys.argv[3]
-    state_name = sys.argv[4]
 
-    # Connect to MySQL server
-    conn = MySQLdb.connect(
-        host="localhost",
-        port=3306,
-        user=mysql_username,
-        passwd=mysql_password,
-        db=db_name,
-        charset="utf8"
-    )
+    if len(sys.argv) == 5:
+        # Get command line arguments
+        mysql_username = sys.argv[1]
+        mysql_password = sys.argv[2]
+        db_name = sys.argv[3]
+        state_name = sys.argv[4]
 
-    # Create a cursor object to execute queries
-    cur = conn.cursor()
+        # Connect to MySQL server
+        conn = MySQLdb.connect(
+            host="localhost",
+            port=3306,
+            user=mysql_username,
+            passwd=mysql_password,
+            db=db_name)
 
-    # Execute the query (safe from SQL injection)
-    cur.execute("SELECT * FROM states WHERE name=%s ORDER BY id ASC", (state_name,))
+        # Create a cursor object to execute queries
+        cur = conn.cursor()
 
-    # Fetch all the rows as a list of tuples
-    rows = cur.fetchall()
+        # Execute the query (safe from SQL injection)
+        cur.execute("SELECT * FROM states WHERE name=%s ORDER BY id ASC", (state_name,))
 
-    # Display the results
-    for row in rows:
-        print(row)
+        # Fetch all the rows as a list of tuples
+        rows = cur.fetchall()
 
-    # Close cursor and connection
-    cur.close()
-    conn.close()
+        # Display the results
+        for row in rows:
+            print(row)
+
+        # Close cursor and connection
+        cur.close()
+        conn.close()
+    else:
+        return
