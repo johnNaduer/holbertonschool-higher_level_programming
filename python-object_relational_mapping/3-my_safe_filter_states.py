@@ -4,9 +4,9 @@ Script that takes in arguments and displays all values in the states
 table of hbtn_0e_0_usa where name matches the argument. This script is
 safe from MySQL injections!
 """
-
 import MySQLdb
 import sys
+
 
 if __name__ == "__main__":
 
@@ -42,4 +42,5 @@ if __name__ == "__main__":
         cur.close()
         conn.close()
     else:
-        return
+        sys.exit(1)  # exit with status code 1 if the number of arguments is incorrect
+
