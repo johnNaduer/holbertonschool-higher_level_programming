@@ -29,7 +29,8 @@ if __name__ == "__main__":
         cur = conn.cursor()
 
         # Execute the query (safe from SQL injection)
-        cur.execute("SELECT * FROM states WHERE name=%s ORDER BY id ASC", (state_name,))
+        i = "SELECT * FROM states WHERE name=%s ORDER BY id ASC"
+        cur.execute(i, (state_name,))
 
         # Fetch all the rows as a list of tuples
         rows = cur.fetchall()
