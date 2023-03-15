@@ -43,5 +43,5 @@ if __name__ == "__main__":
         cur.close()
         conn.close()
     else:
-        sys.exit(1)  # exit with status code 1 if the number of arguments is incorrect
-
+        # exit with status code 1 if the number of arguments is incorrect
+        sys.exit(1)
