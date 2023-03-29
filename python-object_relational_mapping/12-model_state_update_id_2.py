@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """Updates into State obj from db"""
+
 import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import Session
@@ -21,5 +22,5 @@ def update_to_state_obj():
 
     session.close()
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     update_to_state_obj()
