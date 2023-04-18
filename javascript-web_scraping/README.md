@@ -1,4 +1,4 @@
-# JavaScript - Web Scrapingi
+# JavaScript - Web Scraping
 This repository provides an introduction to web scraping with JavaScript programming language. It covers various topics including how to retrieve data from a website using web scraping techniques, how to parse HTML content and manipulate JSON data, and how to use request and fetch API to communicate with external sources.
 
 ### Why JavaScript programming is amazing
