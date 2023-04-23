@@ -1,19 +1,16 @@
 #!/usr/bin/node
-const argv = process.argv;
-const url = argv[2];
-const id = '18';
 const request = require('request');
-request(url, function (error, response, body) {
-  if (error) {
-    console.error('error:', error);
+const url = process.argv[2];
+let count = 0;
+request.get(url, function (err, response, body) {
+  if (err) {
+    console.log(err);
   } else {
-    const rbody = JSON.parse(body);
-    let count = 0;
-    for (const i of rbody.results) {
-      for (const j of i.characters) {
-        if (j.search(id) > 0) {
-          count++;
-        }
+    const results = JSON.parse(body).results;
+    for (let i = 0; i < results.length; i++) {
+      const cha = results[i].characters;
+      for (let j = 0; j < cha.length; j++) {
+        if (cha[j].slice(cha[j].length - 3, cha[j].length - 1) === '18') { count += 1; }
       }
     }
     console.log(count);
